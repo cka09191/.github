@@ -1,0 +1,37 @@
+name: Architecture or project decision
+description: Record a project-design decision, alternatives, and implementation consequences.
+title: "[Decision] "
+labels: ["role:director", "gate:user-review"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Decision question
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verified evidence and information time
+      description: Separate verified facts, inference, assumptions, and evidence pointers.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options and tradeoffs
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommendation and consequences
+    validations:
+      required: true
+  - type: textarea
+    id: linked_work
+    attributes:
+      label: Linked tickets and implementation boundaries
+      description: Link separate tickets for every authoritative layer that must change.
+    validations:
+      required: true

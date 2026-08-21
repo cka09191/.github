@@ -1,0 +1,102 @@
+name: Work item
+description: Plan a bounded implementation, investigation, or review task.
+title: "[Work] "
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Intended outcome
+      description: State the user or product outcome, not only the file change.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and architecture
+      description: Explain why this matters, dependencies, relevant components, and evidence pointers.
+    validations:
+      required: true
+  - type: dropdown
+    id: human_role
+    attributes:
+      label: Human role
+      options:
+        - Proposer
+        - Director / work instructor
+        - Worker
+        - Accountable approver
+    validations:
+      required: true
+  - type: dropdown
+    id: change_layer
+    attributes:
+      label: Authoritative change layer
+      options:
+        - Intent
+        - Shared policy
+        - Project control and design
+        - Product implementation
+    validations:
+      required: true
+  - type: checkboxes
+    id: technical_areas
+    attributes:
+      label: Technical areas
+      options:
+        - label: Product / domain
+        - label: Architecture / interfaces
+        - label: Database / state model
+        - label: Data pipeline
+        - label: AI model / evaluation
+        - label: Backend / API
+        - label: Frontend / UX
+        - label: Testing / performance / security
+        - label: CI/CD / DevOps / cloud
+        - label: Operations / incident analysis
+    validations:
+      required: true
+  - type: textarea
+    id: learning_goal
+    attributes:
+      label: Human learning goal
+      description: Name the concept or engineering skill the human should practice.
+    validations:
+      required: true
+  - type: textarea
+    id: user_scope
+    attributes:
+      label: User-reserved scope
+      description: Files, decisions, tests, or implementation that agents must not take over.
+    validations:
+      required: true
+  - type: textarea
+    id: agent_scope
+    attributes:
+      label: Agent-support scope
+      description: Research, tests, files, or review that agents may own in parallel.
+    validations:
+      required: true
+  - type: textarea
+    id: early_check
+    attributes:
+      label: Early-discovery checkpoint
+      description: Define what will be reviewed before the implementation is complete.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance and evidence
+      description: Commands, observations, receipts, and reviewer expectations.
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk and cost gate
+      options:
+        - No additional approval inside existing authority
+        - Human approval required before execution
+        - Prohibited until a separate contract exists
+    validations:
+      required: true

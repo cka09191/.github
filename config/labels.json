@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "labels": [
+    {"name": "role:proposer", "color": "8250df", "description": "Human is shaping the abstract idea and business intent"},
+    {"name": "role:director", "color": "0969da", "description": "Human is resolving detailed direction or design"},
+    {"name": "role:worker", "color": "1f883d", "description": "Human owns meaningful implementation scope"},
+    {"name": "role:approver", "color": "bc4c00", "description": "Human decision is required for risk or cost"},
+    {"name": "owner:user", "color": "1f883d", "description": "Human is the primary owner"},
+    {"name": "owner:agent", "color": "6e7781", "description": "Agent is the primary owner"},
+    {"name": "work:early-discovery", "color": "fbca04", "description": "Find direction or unintended implementation before completion"},
+    {"name": "work:learning", "color": "d4c5f9", "description": "Ticket has an explicit human learning objective"},
+    {"name": "area:product-domain", "color": "c5def5", "description": "Product, domain, or business-model participation"},
+    {"name": "area:architecture-interfaces", "color": "c5def5", "description": "Architecture, boundaries, or interface participation"},
+    {"name": "area:database-state", "color": "c5def5", "description": "Database schema or state-model participation"},
+    {"name": "area:data-pipeline", "color": "c5def5", "description": "Data ingestion, transformation, or pipeline participation"},
+    {"name": "area:ai-model-evaluation", "color": "c5def5", "description": "AI model design, training, or evaluation participation"},
+    {"name": "area:backend-api", "color": "c5def5", "description": "Backend service or API participation"},
+    {"name": "area:frontend-ux", "color": "c5def5", "description": "Frontend, interaction, or UX participation"},
+    {"name": "area:testing-performance-security", "color": "c5def5", "description": "Testing, performance, or security participation"},
+    {"name": "area:ci-devops-cloud", "color": "c5def5", "description": "CI/CD, DevOps, infrastructure, or cloud participation"},
+    {"name": "area:operations-incidents", "color": "c5def5", "description": "Operations or incident-analysis participation"},
+    {"name": "gate:user-review", "color": "d1242f", "description": "Waiting for human review or confirmation"},
+    {"name": "gate:risk-cost", "color": "b60205", "description": "Explicit risk or cost approval is required"},
+    {"name": "state:blocked", "color": "000000", "description": "Progress is blocked by a named condition"}
+  ]
+}
