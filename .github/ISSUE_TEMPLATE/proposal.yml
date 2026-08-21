@@ -1,0 +1,33 @@
+name: Proposal
+description: Capture an abstract product or business idea before implementation is chosen.
+title: "[Proposal] "
+labels: ["role:proposer"]
+body:
+  - type: textarea
+    id: opportunity
+    attributes:
+      label: Opportunity or problem
+      description: Describe the user, business, or learning opportunity without prescribing code.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Expected value and falsifier
+      description: State why it may matter and what evidence would show that it does not.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and boundaries
+      description: Include risk, cost, rights, privacy, and areas that must remain closed.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Next decision
+      description: Name the smallest decision or experiment needed before refinement.
+    validations:
+      required: true

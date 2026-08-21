@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "project_key": "example",
+  "display_name": "Example",
+  "management_repository": "OWNER/example-project-management",
+  "implementation_repository": null,
+  "portfolio_owner": "OWNER",
+  "portfolio_project_number": null,
+  "default_human": "OWNER",
+  "issue_form_source": "ACCOUNT/.github",
+  "policy_version": "v1"
+}
